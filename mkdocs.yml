@@ -31,15 +31,14 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
-  - footnotes
-  - tables
-  - toc:
-      permalink: true
-  - pymdownx.details
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences
-  - pymdownx.emoji
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+
 
 nav:
   - Start: index.md
@@ -56,5 +55,6 @@ nav:
       - Find Friends With Hobbies: ongoing/find_friends_with_hobbies/index.md
       - Data4Kids: ongoing/data4kids/index.md
   - O mnie: about/index.md
+  
 
 
