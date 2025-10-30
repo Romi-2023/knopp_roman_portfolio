@@ -1,0 +1,77 @@
+site_name: Roman Knopp • Data Science Portfolio
+site_description: Portfolio projektów Data Science – live notebooks, wizualizacje, demo.
+site_url: https://twojuser.github.io/ds_ai_portfolio/
+site_author: Roman
+repo_url: https://github.com/twojuser/ds_ai_portfolio
+repo_name: GitHub
+
+theme:
+  name: material
+  language: pl
+  logo: assets/logo.png         # opcjonalnie
+  favicon: assets/favicon.png   # opcjonalnie
+  palette:
+  - scheme: default
+    primary: blue
+    accent: indigo
+  - scheme: slate
+    primary: cyan
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Ciemny motyw
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false            # notebooki z zapisanymi wynikami
+      include_source: true
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/twoj-linkedin/
+    - icon: fontawesome/brands/github
+      link: https://github.com/twojuser
+  generator: false
+
+nav:
+  - Start: index.md
+  - Projekty:
+      - Iris: iris/index.md
+      - Titanic: titanic/index.md
+      - Półmaraton Wrocław: halfmarathon_analysis/index.md
+      - Welcome Survey:
+          - Opis: welcome_survey/index.md
+          - Notebook: welcome_survey/research.ipynb
+      - Race Analyzer: race_analyzer/index.md
+      - Redstone DDD Map: redstone_ddd_map/index.md
+  - Trwające:
+      - Find Friends With Hobbies: ongoing/find_friends_with_hobbies/index.md
+      - Data4Kids: ongoing/data4kids/index.md
+  - O mnie: about/index.md
+
+extra_css:
+  - assets/extra.css
+

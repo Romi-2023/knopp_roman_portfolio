@@ -1,0 +1,16 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.env
+.conda/
+.ipynb_checkpoints/
+
+# mkdocs
+site/
+*.lock
+
+# system/edytory
+.DS_Store
+Thumbs.db
+.vscode/

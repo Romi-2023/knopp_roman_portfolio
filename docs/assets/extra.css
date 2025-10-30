@@ -1,0 +1,128 @@
+/* siatka kart Material */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 1rem;
+}
+.grid.cards > * {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+/* --- tiles / mini-kafelki dla „Trwające” --- */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: .5rem 0 1rem 0;
+}
+.tile {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #eef1f5 center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 22px rgba(0,0,0,.12);
+  transform: translateY(0);
+  transition: transform .15s ease, box-shadow .15s ease;
+  color: #fff;
+}
+.tile::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--bg, none);
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05);
+}
+.tile::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.0) 40%, rgba(0,0,0,.55) 100%);
+}
+.tile > * { position: relative; z-index: 1; }
+.tile:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.18); }
+.tile .badge { display:inline-block; font-size:.75rem; background:rgba(255,255,255,.18); padding:.25rem .55rem; border-radius:999px; margin-bottom:.35rem; backdrop-filter: blur(2px); }
+
+/* delikatna estetyka */
+h1, h2, h3 { color: #2c5282; }
+img { border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote { background:#f0f9ff; border-left:4px solid #90cdf4; padding:.5rem 1rem; }
+
+.tile .badge { white-space: nowrap; }
+.tile h3, .tile p { text-shadow: 0 1px 2px rgba(0,0,0,.25); }
+
+.tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin:.5rem 0 1rem }
+.tile{position:relative; aspect-ratio:16/9; border-radius:16px; overflow:hidden; background:#eef1f5 center/cover no-repeat; display:flex; align-items:flex-end; padding:1rem; text-decoration:none; box-shadow:0 6px 22px rgba(0,0,0,.12); transform:translateY(0); transition:transform .15s, box-shadow .15s; color:#fff}
+.tile::before{content:""; position:absolute; inset:0; background:var(--bg,none); background-size:cover; background-position:center; filter:saturate(1.05)}
+.tile::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%)}
+.tile>*{position:relative; z-index:1}
+.tile:hover{transform:translateY(-3px); box-shadow:0 10px 28px rgba(0,0,0,.18)}
+.tile .badge{display:inline-block; font-size:.75rem; background:rgba(255,255,255,.18); padding:.25rem .55rem; border-radius:999px; margin-bottom:.35rem; backdrop-filter:blur(2px); white-space:nowrap}
+.tile h3,.tile p{ text-shadow:0 1px 2px rgba(0,0,0,.25) }
+
+/* --- HERO header --- */
+.hero{
+  position: relative;
+  border-radius: 20px;
+  padding: 2.2rem 2rem;
+  margin: .5rem 0 1.25rem;
+  color: #fff;
+  background:
+  linear-gradient(135deg, rgba(44,82,130,.95) 0%, rgba(49,130,206,.90) 60%, rgba(72,187,255,.85) 100%),
+  var(--hero, url('hero.png'));
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,.12);
+  overflow: hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(1200px 400px at 20% -10%, rgba(255,255,255,.18), transparent 60%);
+  pointer-events:none;
+}
+.hero-content{ position: relative; z-index:1; max-width: 960px; }
+.hero h1{ margin:0 0 .25rem; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight:800; }
+.hero .subtitle{ margin:.1rem 0 .35rem; font-size: clamp(1rem, 2vw, 1.2rem); opacity:.95 }
+.hero .tagline{ margin:0 0 .9rem; font-size: 1.05rem; opacity:.95 }
+.hero .cta{ display:flex; gap:.5rem; flex-wrap:wrap }
+
+/* buttons */
+.btn{
+  display:inline-block; padding:.55rem .9rem; border-radius:12px;
+  background:#ffffff; color:#2c5282; text-decoration:none; font-weight:700;
+  box-shadow:0 4px 14px rgba(0,0,0,.12); transition:transform .12s, box-shadow .12s;
+}
+.btn:hover{ transform: translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.16); }
+.btn.btn-ghost{
+  background: rgba(255,255,255,.18); color:#fff; border:1px solid rgba(255,255,255,.35);
+  backdrop-filter: blur(2px);
+}
+
+/* Kafelki bez nakładki tekstu (gdy tekst jest już w obrazie) */
+.tile.no-copy h3,
+.tile.no-copy p { display: none; }
+.tile.no-copy { align-items: flex-start; padding: .75rem .9rem; }
+
+/* Ukrycie tekstu na kafelku, gdy napis jest już w obrazie */
+.tile.no-copy h3, .tile.no-copy p { display: none; }
+/* Ukrycie badga „Trwające” na kafelku, jeśli nie chcesz duplikatu */
+.tile.no-badge .badge { display: none; }
+
+/* Delikatniejsze hover na kafelkach (żywsze UI) */
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
+}
+
+/* (opcjonalnie) drobny „lift” hero */
+.hero { box-shadow: 0 18px 50px rgba(0,0,0,.08); }
