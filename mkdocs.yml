@@ -1,60 +1,45 @@
 site_name: Roman Knopp • Data Science Portfolio
-site_description: Portfolio projektów Data Science – live notebooks, wizualizacje, demo.
-site_url: https://twojuser.github.io/ds_ai_portfolio/
-site_author: Roman
-repo_url: https://github.com/twojuser/ds_ai_portfolio
+site_description: Live notebooks, demo Streamlit i projekty end-to-end
+site_url: https://romi-2023.github.io/knopp_roman_portfolio/
+site_author: Roman Knopp
+
+repo_url: https://github.com/Romi-2023/knopp_roman_portfolio
 repo_name: GitHub
+
+docs_dir: docs
+use_directory_urls: true
 
 theme:
   name: material
   language: pl
-  logo: assets/logo.png         # opcjonalnie
-  favicon: assets/favicon.png   # opcjonalnie
-  palette:
-  - scheme: default
-    primary: blue
-    accent: indigo
-  - scheme: slate
-    primary: cyan
-    accent: lime
-    toggle:
-      icon: material/weather-night
-      name: Ciemny motyw
-
-  features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - toc.integrate
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   palette:
     - scheme: default
+      primary: blue
+      accent: indigo
+
+extra_css:
+  - assets/extra.css
 
 plugins:
   - search
   - mkdocs-jupyter:
-      execute: false            # notebooki z zapisanymi wynikami
-      include_source: true
+      include: ["**/*.ipynb"]
+      execute: false
 
 markdown_extensions:
   - admonition
-  - codehilite
   - attr_list
+  - footnotes
+  - tables
   - toc:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.tabbed
-
-extra:
-  social:
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/twoj-linkedin/
-    - icon: fontawesome/brands/github
-      link: https://github.com/twojuser
-  generator: false
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
 
 nav:
   - Start: index.md
@@ -71,7 +56,4 @@ nav:
       - Find Friends With Hobbies: ongoing/find_friends_with_hobbies/index.md
       - Data4Kids: ongoing/data4kids/index.md
   - O mnie: about/index.md
-
-extra_css:
-  - assets/extra.css
 
