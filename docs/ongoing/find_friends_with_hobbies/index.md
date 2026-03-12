@@ -1,6 +1,6 @@
 # 🤝 Find Friends With Hobbies — Connect Through Shared Interests
 
-![Podgląd aplikacji](img/cover.png){ width="720" }
+![Podgląd aplikacji](img/thumb.png){ width="720" }
 
 > **Find Friends With Hobbies** to aplikacja społecznościowa zbudowana w Pythonie i Streamlit, która pomaga użytkownikom poznawać osoby o podobnych zainteresowaniach.
 > Projekt łączy profile użytkowników, kluby, wydarzenia, wiadomości i rekomendacje w jednej aplikacji webowej.
@@ -100,27 +100,41 @@ This project demonstrates my practical skills in:
 
 ## 🖼️ Główne obszary aplikacji / Main App Areas
 
-### 👥 Społeczność i profile
+## 📸 Podgląd aplikacji / App Preview
 
-Użytkownicy mogą tworzyć konto, rozwijać profil i korzystać z funkcji społecznościowych opartych na zainteresowaniach.
+### 🏠 Ekran startowy / Landing Page
 
----
+![Ekran startowy aplikacji](img/thumb.png){ width="720" }
 
-### 🏛️ Kluby i wydarzenia
-
-Aplikacja wspiera tworzenie i odkrywanie klubów oraz śledzenie wydarzeń związanych z pasjami użytkowników.
-
----
-
-### 💬 Wiadomości i rekomendacje
-
-Projekt zawiera komunikację prywatną i forum oraz mechanizmy rekomendacji dopasowanych do użytkownika.
+Strona startowa pokazuje główny cel aplikacji: łączenie ludzi o podobnych zainteresowaniach, klubach i aktywnościach.  
+To najbardziej reprezentacyjny ekran projektu i dobre wejście dla nowych użytkowników.
 
 ---
 
-### 🗺️ Lokalizacja i miasto
+### 🌆 Dashboard miejski / City Dashboard
 
-Elementy mapy, geokodowania i miejskiego feedu wzmacniają lokalny, praktyczny wymiar aplikacji.
+![Dashboard miejski](img/ffwh_dashboard_pl.png){ width="720" }
+
+Dashboard „Co w mieście” pokazuje użytkownikowi najważniejsze informacje związane z jego lokalizacją, klubami i aktywnością w aplikacji.  
+To centrum codziennego korzystania z produktu.
+
+---
+
+### 🏛️ Lista klubów / Club List
+
+![Lista klubów](img/ffwh_clubs.png){ width="720" }
+
+Widok klubów pozwala filtrować społeczności, sprawdzać szczegóły i zarządzać członkostwem.  
+To jeden z najważniejszych obszarów aplikacji, bo właśnie tutaj użytkownicy znajdują grupy zgodne ze swoimi hobby.
+
+---
+
+### 🗺️ Mapa klubów / Clubs Map
+
+![Mapa klubów](img/ffwh_clubs_map.png){ width="720" }
+
+Mapa klubów dodaje lokalny i praktyczny wymiar aplikacji, pokazując społeczności w kontekście geograficznym.  
+To funkcja, która wyróżnia projekt i dobrze pokazuje integrację map oraz danych lokalizacyjnych.
 
 ---
 
