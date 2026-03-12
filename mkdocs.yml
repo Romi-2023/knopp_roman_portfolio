@@ -1,5 +1,5 @@
 site_name: Roman Knopp • Data Science Portfolio
-site_description: Live notebooks, demo Streamlit i projekty end-to-end
+site_description: Portfolio, live demos and end-to-end projects built with Python, SQL and Streamlit
 site_url: https://romi-2023.github.io/knopp_roman_portfolio/
 site_author: Roman Knopp
 
@@ -39,10 +39,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed
 
-
 nav:
   - Start: index.md
-  - Projekty:
+  - Projekty analityczne:
       - Iris: iris/index.md
       - Titanic: titanic/index.md
       - Półmaraton Wrocław: halfmarathon_analysis/index.md
@@ -51,10 +50,7 @@ nav:
           - Notebook: welcome_survey/research.ipynb
       - Race Analyzer: race_analyzer/index.md
       - Redstone DDD Map: redstone_ddd_map/index.md
-  - Trwające:
+  - Aplikacje / Applications:
+      - Kopalnia Wiedzy: ongoing/data4kids/index.md
       - Find Friends With Hobbies: ongoing/find_friends_with_hobbies/index.md
-      - Data4Kids: ongoing/data4kids/index.md
   - O mnie: about/index.md
-  
-
-

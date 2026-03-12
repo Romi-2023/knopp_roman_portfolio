@@ -1,58 +1,134 @@
-# 🧒📊 Data4Kids — Ucz się danych przez zabawę!
+# 🧠📚 Kopalnia Wiedzy — Learn Through Play
 
 ![Ekran główny aplikacji](img/start.png){ width="720" }
 
-> **Data4Kids** to edukacyjna aplikacja w Pythonie (Streamlit) do nauki podstaw analizy danych poprzez gry, quizy, misje i fabułę.  
-> Stworzona, by pokazać, że **dane mogą być przygodą!**
+> **Kopalnia Wiedzy** to edukacyjna aplikacja webowa zbudowana w Pythonie i Streamlit.
+> Łączy naukę, quizy, misje, nagrody i elementy gry, żeby pokazać dzieciom, że nauka może być angażująca i przyjemna.
+>
+> **Kopalnia Wiedzy** is an educational web app built with Python and Streamlit.
+> It combines learning, quizzes, missions, rewards and game-like mechanics to make knowledge more engaging for children.
 
 ---
 
-## 🎯 Cel projektu
+## 🎯 Cel projektu / Project Goal
 
-Pomóc dzieciom (8–14 lat) zrozumieć pojęcia takie jak *średnia, mediana, grupowanie danych, wykresy* — ale **bez nudy**.  
-Zamiast teorii – gra, punkty doświadczenia, naklejki i codzienne misje.
+Projekt powstał po to, aby zamienić naukę w interaktywną przygodę.
+Zamiast suchej teorii użytkownik przechodzi przez kolejne aktywności, zdobywa XP, odblokowuje elementy i rozwija się krok po kroku.
 
----
-
-## 🧩 Główne funkcje
-
-- 👦 Tryb dziecięcy i panel rodzica  
-- 🧠 Quizy danych i quizy obrazkowe  
-- 🧹 Misje: czyszczenie, sortowanie i eksploracja danych  
-- 🎨 Album naklejek i fabularne „Daily Questy”  
-- 🏫 Przedmioty szkolne: matematyka, polski, historia, geografia, fizyka, chemia, angielski  
-- 🏅 System XP, poziomy i **Hall of Fame**
+The goal of the project is to turn learning into an interactive adventure.
+Instead of passive content, the user progresses through activities, earns XP and unlocks new elements over time.
 
 ---
 
-## 🚀 Demo aplikacji
+## 🧩 Aktualne funkcje / Current Features
 
-[🌐 Uruchom demo Streamlit →](http://109.207.146.146:8501){ target=_blank }
-
-> Wersja: **v0.8.0**  
-> Zrobione z ❤️ w **Streamlit**.
+- 👦 Gra jako zalogowany użytkownik lub Gość
+- 🧑‍🎨 Wybór i zmiana avatara
+- 🧠 Quiz danych
+- 🖼️ Quiz obrazkowy
+- 🎯 Misje i codzienne aktywności
+- 🎁 Skrzynka z nagrodami
+- 🏆 Hall of Fame
+- 📘 Słowniczek
+- 🗺️ Mapa kopalni
+- ⚡ Wyzwanie dnia
+- 📚 Pomoce szkolne
+- 📖 Lektury i streszczenia
+- 🚲 Karta rowerowa: nauka, testy i egzamin próbny
+- 🎨 Album naklejek
+- 🕹️ Plac zabaw i dodatkowe aktywności
+- 🔐 Panel nadzoru
 
 ---
 
-## 🧭 Struktura aplikacji
+## 🚀 Demo aplikacji / Live Demo
 
-| Moduł | Opis |
-|-------|------|
-| `app.py` | Główna aplikacja Streamlit |
-| `config.toml` | Konfiguracja misji i quizów |
-| `datasets/` | Zbiory danych dopasowane do wieku |
-| `assets/` | Ikony, obrazki, naklejki |
-| `components/` | Widoki Streamlit i quizy tematyczne |
+[🌐 Uruchom aplikację / Open live demo](https://kopalniawiedzy-wioy8.ondigitalocean.app/){ target=_blank }
+
+> Wdrożenie: **DigitalOcean App Platform**  
+> Zbudowano w oparciu o **Python** i **Streamlit**
 
 ---
 
-## 📊 Podgląd aplikacji
+## 🧱 Architektura / Architecture
 
-### 👋 Ekran powitalny
+Aktualna wersja projektu ma bardziej modularną strukturę niż wcześniejsze wydania.
+Kod jest rozdzielony na warstwy odpowiedzialne za routing, logikę aplikacji, widoki i elementy interfejsu.
+
+The current version uses a more modular structure than the earlier releases.
+The codebase is organized into routing, core logic, views and UI components.
+
+### Główne elementy repo / Main Repository Areas
+
+- `app.py` — główny punkt startowy aplikacji
+- `core/` — routing, stan aplikacji, motyw i logika pomocnicza
+- `pages/` — widoki i moduły funkcjonalne
+- `ui/` — elementy interfejsu
+- `assets/` — zasoby graficzne i animacje
+- `data/` — dane wykorzystywane przez moduły edukacyjne
+
+---
+
+## 📚 Moduły edukacyjne / Learning Modules
+
+Aplikacja nie ogranicza się już tylko do prostych quizów.
+Obecna wersja rozwija się w kierunku większego świata edukacyjnego z wieloma obszarami nauki i aktywności.
+
+Current development goes beyond simple quizzes.
+The app is evolving into a broader educational world with multiple learning areas and activity types.
+
+### Przykładowe obszary / Example Areas
+
+- **Quiz danych** — pytania rozwijające logiczne myślenie i rozumienie informacji
+- **Quiz obrazkowy** — nauka przez obrazy i wizualne skojarzenia
+- **Pomoce szkolne** — sekcja wspierająca naukę
+- **Lektury** — powtórki, postacie, motywy i streszczenia
+- **Karta rowerowa** — teoria, testy i egzamin próbny
+- **Wyzwanie dnia** — krótkie codzienne zadanie
+- **Album naklejek / Hall of Fame** — motywacja i postęp użytkownika
+
+---
+
+## 👨‍👩‍👧 Tryb użytkownika i nadzór / User Mode and Supervision
+
+Projekt zawiera zarówno elementy zabawy, jak i funkcje kontroli.
+Po stronie użytkownika ważne są postęp, nagrody i personalizacja, a po stronie nadzoru — zarządzanie i bezpieczeństwo dostępu.
+
+The project combines playful learning with supervision features.
+On the user side it focuses on progress, rewards and personalization; on the admin side it includes management and access control.
+
+---
+
+## 📊 Co pokazuje ten projekt / What This Project Demonstrates
+
+Ten projekt pokazuje moje praktyczne umiejętności w zakresie:
+
+- budowy większej aplikacji webowej w Pythonie
+- pracy z modularną architekturą
+- projektowania logiki produktu edukacyjnego
+- rozwijania nawigacji i wielu ekranów w Streamlit
+- łączenia gamifikacji z funkcjami użytkowymi
+- iteracyjnego rozwijania produktu od MVP do bogatszej wersji
+
+This project demonstrates my practical skills in:
+
+- building larger Python web applications
+- working with a modular architecture
+- designing educational product logic
+- developing multi-screen Streamlit navigation
+- combining gamification with utility features
+- iterating from MVP to a richer product version
+
+---
+
+## 📸 Podgląd aplikacji / App Preview
+
+### 👋 Ekran startowy
 
 ![Ekran powitalny](img/start.png){ width="700" }
 
-Użytkownik wybiera imię, wiek i poziom trudności zestawu danych. System automatycznie dobiera **grupę wiekową** (np. 10–12).
+Ekran startowy pełni rolę centrum wejścia do świata aplikacji.
+To tutaj użytkownik rozpoczyna przygodę, loguje się lub przechodzi dalej do aktywności.
 
 ---
 
@@ -60,8 +136,7 @@ Użytkownik wybiera imię, wiek i poziom trudności zestawu danych. System autom
 
 ![Quiz danych](img/quiz_danych.png){ width="700" }
 
-Krótki quiz, który uczy pojęć takich jak mediana, grupowanie, korelacja.  
-Wyniki od razu się pokazują, a każdy poprawny wybór to punkty XP!
+Quiz danych rozwija myślenie analityczne i uczy pracy z informacją w lekkiej, przystępnej formie.
 
 ---
 
@@ -69,49 +144,39 @@ Wyniki od razu się pokazują, a każdy poprawny wybór to punkty XP!
 
 ![Quiz obrazkowy](img/quiz_obrazkowy.png){ width="700" }
 
-Uczniowie wybierają odpowiedź na podstawie wykresów i obrazków — bez tabelek!  
-Świetny sposób na wizualne myślenie i logiczne skojarzenia.
+Quiz obrazkowy stawia na intuicję, obraz i skojarzenia, dzięki czemu nauka staje się bardziej naturalna i atrakcyjna.
 
 ---
 
-## 🧮 Technologie
+## 🧮 Technologie / Tech Stack
 
-| Technologia | Zastosowanie |
-|--------------|--------------|
-| **Python** | logika aplikacji |
-| **Streamlit** | interfejs użytkownika |
-| **Pandas, Matplotlib** | przetwarzanie i wizualizacja danych |
-| **MkDocs Material** | dokumentacja i portfolio projektu |
-
----
-
-## 🧩 Roadmapa (w trakcie)
-
-- [x] Tryb dziecięcy  
-- [x] Quiz danych i quiz obrazkowy  
-- [x] System XP i poziomy  
-- [ ] Tryb fabularny z misjami  
-- [ ] Statystyki postępów  
-- [ ] Personalizacja postaci 👦👧  
-- [ ] Tryb offline + eksport do PDF  
+- **Python**
+- **Streamlit**
+- **Pandas**
+- **Matplotlib**
+- **MkDocs Material**
+- modularna organizacja kodu oparta na `core/`, `pages/` i `ui/`
 
 ---
 
-## 🧑‍🏫 Dlaczego to ważne?
+## 🔮 Dalszy rozwój / Next Steps
 
-Data4Kids łączy **dydaktykę z interaktywną zabawą**.  
-Projekt pomaga dzieciom rozwijać:
-- logiczne myślenie,  
-- podstawy analizy danych,  
-- cyfrową samoświadomość (świadome korzystanie z danych).  
+Kopalnia Wiedzy jest już działającą aplikacją, ale ma też przestrzeń do dalszego rozwoju, na przykład w kierunku:
 
----
-
-## 🔗 Linki
-
-- 🧮 [Demo Streamlit](http://109.207.146.146:8501){ target=_blank }  
-- 💬 [Kontakt / LinkedIn](https://www.linkedin.com/in/twoj-linkedin/){ target=_blank }
+- kolejnych modułów edukacyjnych
+- rozbudowy personalizacji
+- jeszcze lepszej analityki postępów
+- dalszego wzmacniania panelu nadzoru
+- nowych aktywności i mechanik nagród
 
 ---
 
-*Data4Kids – bo dane też mogą mieć uśmiech 😊*
+## 🔗 Linki / Links
+
+- 🧮 [Live demo](https://kopalniawiedzy-wioy8.ondigitalocean.app/){ target=_blank }
+- 💻 [GitHub repo](https://github.com/Romi-2023/kopalnia_wiedzy){ target=_blank }
+- 💼 [LinkedIn](https://www.linkedin.com/in/roman-knopp-90aab3396/){ target=_blank }
+
+---
+
+*Kopalnia Wiedzy — nauka, która nie musi być nudna 😊*
