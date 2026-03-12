@@ -1,6 +1,6 @@
 # 🧠📚 Kopalnia Wiedzy — Learn Through Play
 
-![Ekran główny aplikacji](img/start.png){ width="720" }
+![Aktualny ekran główny aplikacji](img/kw_home_logged.png){ width="420" }
 
 > **Kopalnia Wiedzy** to edukacyjna aplikacja webowa zbudowana w Pythonie i Streamlit.
 > Łączy naukę, quizy, misje, nagrody i elementy gry, żeby pokazać dzieciom, że nauka może być angażująca i przyjemna.
@@ -123,28 +123,27 @@ This project demonstrates my practical skills in:
 
 ## 📸 Podgląd aplikacji / App Preview
 
-### 👋 Ekran startowy
+### 👋 Ekran startowy / Home Screen
 
-![Ekran powitalny](img/start.png){ width="700" }
+![Ekran startowy](img/kw_home_logged.png){ width="420" }
 
-Ekran startowy pełni rolę centrum wejścia do świata aplikacji.
-To tutaj użytkownik rozpoczyna przygodę, loguje się lub przechodzi dalej do aktywności.
-
----
-
-### 🧠 Quiz danych
-
-![Quiz danych](img/quiz_danych.png){ width="700" }
-
-Quiz danych rozwija myślenie analityczne i uczy pracy z informacją w lekkiej, przystępnej formie.
+Aktualny ekran startowy pokazuje profil gracza, poziom, XP, przyciski wejścia do misji oraz szybki dostęp do kluczowych funkcji aplikacji.
 
 ---
 
-### 📸 Quiz obrazkowy
+### 🗺️ Wybór portalu / Portal Selection
 
-![Quiz obrazkowy](img/quiz_obrazkowy.png){ width="700" }
+![Wybór portalu](img/kw_portals.png){ width="420" }
 
-Quiz obrazkowy stawia na intuicję, obraz i skojarzenia, dzięki czemu nauka staje się bardziej naturalna i atrakcyjna.
+Użytkownik może przechodzić między głównymi obszarami aplikacji, takimi jak mapa kopalni, przedmioty szkolne, poznawanie danych i plac zabaw.
+
+---
+
+### 📚 Przedmioty szkolne / School Subjects
+
+![Przedmioty szkolne](img/kw_school_subjects.png){ width="420" }
+
+Sekcja przedmiotów szkolnych prowadzi do zestawów zadań bonusowych z różnych dziedzin, takich jak matematyka, geografia, historia, fizyka czy informatyka.
 
 ---
 

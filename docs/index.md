@@ -35,7 +35,7 @@
 </a>
 
 <a class="tile" href="ongoing/find_friends_with_hobbies/"
-   style="--bg: url('ongoing/find_friends_with_hobbies/img/cover.png');">
+   style="--bg: url('ongoing/find_friends_with_hobbies/img/thumb.png');">
   <span class="badge">Live</span>
   <h3>Find Friends With Hobbies</h3>
   <p>Community app for connecting people through hobbies, clubs, events and social features.</p>
